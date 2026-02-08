@@ -137,16 +137,17 @@ Potential enhancements include:
 ## Dashboard Views
 
 ### All Leads Overview
-![All Leads](images/Lead Conversion - All.png)
+![All Leads](images/Lead%20Conversion%20-%20All.png)
 
 ---
 
 ### Not Contacted Leads
-![Not Contacted](images/Lead Conversion Not Contacted.png)
+![Not Contacted](images/Lead%20Conversion%20Not%20Contacted.png)
+
 ---
 
 ### Contacted Leads
-![Contacted](images/Lead Conversion - Contacted.png)
+![Contacted](images/Lead%20Conversion%20-%20Contacted.png)
 
 ---
 
