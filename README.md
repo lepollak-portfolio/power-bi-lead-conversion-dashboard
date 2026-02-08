@@ -1,4 +1,4 @@
-# Lead Conversion & Allocation Dashboard (Power BI)
+# Lead Conversion Dashboard (Power BI)
 
 ## Project Overview
 This project analyzes lead generation and conversion performance using a banking marketing dataset from Kaggle.
