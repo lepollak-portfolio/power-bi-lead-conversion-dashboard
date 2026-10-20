@@ -1,156 +1,183 @@
-# Lead Conversion Dashboard (Power BI)
 
-## Project Overview
-This project analyzes lead generation and conversion performance using a banking marketing dataset from Kaggle.
+# Lead Performance Dashboard | Power BI
 
-The objective was to evaluate lead quality, conversion behavior, and the impact of contact strategy on conversion outcomes. The dashboard is designed to support data-driven lead allocation and outreach decisions.
+**LP Analytics — Turning Data Into Opportunity**
+
+An interactive Power BI executive dashboard analyzing lead acquisition, conversion performance, and outreach effectiveness using a publicly available banking lead dataset.
+
+## Executive Overview
+
+![Lead Performance Executive Overview](images/Lead%20Performance%20Overview.jpg)
+
+### Performance Snapshot
+
+| KPI | Result |
+|---|---:|
+| Total Leads | 69,713 |
+| Total Conversions | 1,020 |
+| Conversion Rate | 1.46% |
+| Reporting Period | July–September 2016 |
+
+The dashboard provides leadership with a consolidated view of lead performance, highlighting opportunities to improve acquisition strategy, evaluate outreach effectiveness, and prioritize higher-performing lead sources.
 
 ---
 
 ## Business Problem
-Organizations investing in lead generation need to understand:
 
-- Which sources produce high-quality leads  
-- Which segments are most likely to convert  
-- Whether contacting leads improves conversion performance  
-- Where to allocate resources for maximum ROI  
+Organizations investing in lead acquisition need to understand:
 
-This dashboard simulates a real-world lead strategy and outreach environment.
+- Which lead sources generate the strongest conversion rates?
+- How does conversion performance vary across source categories?
+- How do contacted and non-contacted leads compare?
+- How does performance change over time?
+- Where should leadership focus further analysis and potential resource allocation?
+
+This project demonstrates how business intelligence reporting can translate lead-level data into actionable performance insights.
 
 ---
 
 ## Dataset
-**Source:** Kaggle Banking Marketing Dataset  
 
-The dataset includes:
+**Source:** Public banking lead dataset from Kaggle.
 
-- Lead source information  
-- Customer demographics  
-- Loan and income details  
-- Contact history  
-- Conversion outcome (Approved)
+The dataset contains approximately 69,700 lead records, including:
+
+- Lead acquisition sources and categories
+- Customer demographics
+- Financial and loan attributes
+- Contact status
+- Approval outcomes
+
+For this analysis, approved leads are treated as conversions.
+
+**Data Disclosure:** This portfolio project uses publicly available sample data and does not contain confidential employer or customer information.
 
 ---
 
-## Key Metrics
-Key KPIs were created using DAX measures:
+## Technical Implementation
 
-- **Total Leads**  
-- **Total Conversions**  
-- **Conversion Rate**
+### Tools and Technologies
 
-These metrics provide a quick health check of funnel performance.
+- **Power BI Desktop** — Interactive reporting and visualization
+- **DAX** — Calculated measures and KPI development
+- **Power Query** — Data preparation and transformation
+- **Data Modeling** — Filtering and analytical structure
+- **GitHub** — Project documentation and version control
+
+### DAX Measures
+
+The dashboard includes measures for:
+
+- Total Leads
+- Total Conversions
+- Conversion Rate
+- Contact Rate
+
+Measures support dynamic analysis across reporting periods, lead sources, source categories, and contact status.
 
 ---
 
 ## Dashboard Features
 
-### Executive KPI View
-Provides a high-level snapshot of:
+### Executive KPI Reporting
 
-- Total Leads  
-- Total Conversions  
-- Overall Conversion Rate  
+High-level KPI cards summarize lead volume, conversions, and conversion efficiency.
 
-**Purpose:** Quick performance evaluation for leadership.
+### Lead Source Performance
 
----
+Horizontal bar charts compare conversion rates across individual acquisition sources, helping identify differences in lead quality and conversion efficiency.
 
-### Conversion by Source
-Highlights which acquisition channels generate the best results.
+### Source Category Analysis
 
-Some sources produce lower volume but higher conversion efficiency.
+Category-level visualizations allow leadership to compare performance across broader acquisition groupings.
 
----
+### Monthly Conversion Trends
 
-### Conversion Trends Over Time
-Monthly trend analysis helps identify:
+A time-series visualization tracks monthly conversion volume to identify changes in performance throughout the reporting period.
 
-- Seasonality  
-- Performance spikes or dips  
+### Contact Strategy Analysis
+
+Interactive slicers allow users to compare contacted and non-contacted lead populations, evaluate conversion differences, and investigate outreach-related performance patterns.
 
 ---
 
-### Interactive Filtering (Contact Strategy Analysis)
-A slicer allows users to compare performance between:
+## Key Business Insights
 
-- Contacted leads  
-- Non-contacted leads  
+- **Overall Conversion Performance:** 1,020 conversions from 69,713 leads, representing a 1.46% conversion rate.
 
-This helps evaluate whether outreach efforts are driving conversions.
+- **Source Performance:** Source S134 achieved a 3.72% conversion rate in the overall view, outperforming several other acquisition sources.
 
----
+- **Category Performance:** Source Category B recorded a 1.66% conversion rate, the highest among the categories displayed in the overall dashboard.
 
-## Contact Strategy Comparison
-To demonstrate the impact of outreach strategy, three dashboard states were captured:
+- **Monthly Conversion Trends:** July recorded 310 conversions, August 364, and September 346, making August the strongest month by conversion volume.
 
-1. **All Leads View**  
-   Shows overall funnel health and baseline conversion performance.
+- **Outreach Analysis:** Contact-status filtering supports comparisons between contacted and non-contacted leads. These comparisons identify associations rather than proving that outreach caused conversions.
 
-2. **Not Contacted / Contacted = No**  
-   Highlights conversion performance when no outreach occurs.
-
-3. **Contacted = Yes**  
-   Demonstrates how engagement affects conversion outcomes.
-
-This comparison showcases how data can inform outreach strategy and lead prioritization.
+These findings demonstrate how an executive dashboard can support further investigation of lead acquisition efficiency and outreach strategy.
 
 ---
 
-## Key Insights
+## Interactive Dashboard Views
 
-- Contacted leads show stronger conversion performance than non-contacted leads  
-- Certain sources significantly outperform others in conversion rate  
-- Some categories generate volume but low conversion quality  
+### All Leads — Executive Overview
 
----
+![All Leads Executive Overview](images/Lead%20Performance%20Overview.jpg)
 
-## Tools Used
-
-- Power BI Desktop  
-- DAX (Data Analysis Expressions)  
-- Power Query for data cleaning and transformation  
-
----
-
-## Why This Project Matters
-This project demonstrates:
-
-- KPI design  
-- Funnel thinking  
-- Lead performance analysis  
-- Business-focused storytelling with data  
-- Evaluation of outreach effectiveness
-
----
-
-## Future Improvements
-Potential enhancements include:
-
-- Predictive modeling for conversion likelihood  
-- Lead scoring models  
-- Automated refresh pipelines  
-- Expanded time-series analysis
-
----
-
-## Dashboard Views
-
-### All Leads Overview
-![All Leads](images/Lead%20Conversion%20-%20All.png)
-
----
-
-### Not Contacted Leads
-![Not Contacted](images/Lead%20Conversion%20Not%20Contacted.png)
-
----
+Displays overall lead acquisition and conversion performance.
 
 ### Contacted Leads
-![Contacted](images/Lead%20Conversion%20-%20Contacted.png)
+
+![Contacted Leads Dashboard](images/Contacted%20Lead%20Overview.jpg)
+
+Filters the dashboard to leads marked as contacted, allowing focused analysis of conversion performance within the contacted population.
+
+### Non-Contacted Leads
+
+![Non-Contacted Leads Dashboard](images/Non-Contacted%20Lead%20Overview.jpg)
+
+Filters the dashboard to leads marked as not contacted, providing a comparison population for evaluating conversion patterns.
+
+**Note:** Screenshots demonstrate different interactive filter states. The Power BI project file contains the report used to produce these views.
 
 ---
 
-## Author
-Laura Pollak  
-Data Analytics | SQL | Business Intelligence
+## Business Value
+
+This project demonstrates the ability to:
+
+- Translate business questions into measurable KPIs
+- Develop interactive executive reporting in Power BI
+- Apply DAX calculations and filter-context logic
+- Analyze acquisition-channel and conversion performance
+- Communicate analytical findings to business stakeholders
+- Design visually consistent, decision-focused reporting
+
+---
+
+## Future Enhancements
+
+Potential future improvements include:
+
+- Predictive conversion modeling
+- Lead scoring models
+- Additional acquisition cost metrics
+- Expanded time-series analysis
+- Automated reporting and refresh pipelines
+
+---
+
+## Project Files
+
+- [Mock Leads Data.pbix](Mock%20Leads%20Data.pbix) — Power BI report file
+- [train.csv](train.csv) — Source dataset
+- [images/](images/) — Executive dashboard screenshots
+
+---
+
+## About the Analyst
+
+**Laura Pollak**
+
+**LP Analytics** | Data Analytics • SQL • Power BI • Business Intelligence
+
+*Turning Data Into Opportunity*
